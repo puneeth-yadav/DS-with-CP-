@@ -39,6 +39,19 @@ class Stack {
         return;
         
     }
+    public void travarsal(){
+          if (top == -1) {
+        System.out.println("Stack is empty");
+        return;
+    }
+
+    System.out.println("Stack");
+    for (int i=top; i>=0; i--) {
+        System.out.println(arr[i]);
+    }
+            
+        
+    }
 }
 
 class Main {
@@ -51,8 +64,15 @@ class Main {
         System.out.println(s.append(17));
         System.out.println("----After appending 17 -----");
         s.currstateStack();
-        System.out.println(s.pop());
-        System.out.println("----After pop -----");
+         System.out.println(s.append(18));
+        System.out.println("----After appending 18 -----");
+        s.currstateStack(); 
+        System.out.println(s.append(19));
+        System.out.println("----After appending 19 -----");
+        s.currstateStack(); 
+        System.out.println(s.append(20));
+        System.out.println("----After appending 20 -----");
         s.currstateStack();
+        s.travarsal();
     }
 }
