@@ -1,3 +1,9 @@
+// stack implementation with help array
+
+// principle
+
+// LIFO
+
 class Stack {
     int top;
     int[] arr;
